@@ -16,7 +16,7 @@ const Home = () => {
       }}
     >
       <Card sx={{ maxWidth: 1200, width: "100%", borderRadius: "16px", overflow: "hidden" }}>
-        
+        <Grid2>
         <Grid2 container sx={{
               backgroundColor: "#fff",
               display: "flex",
@@ -39,14 +39,16 @@ const Home = () => {
     >
       <img src="src/images/img 4.png" alt="Logo" width="60px" height="60px" />
       <Typography>Maternal and Child Health <br></br>Sri Lanka</Typography>
+      <img src="src\images\img 3.png"/>
     </Box>
+    
      <img src="src\images\img 2.jpeg"/>
+      </Grid2>
 
-  
+      <Grid2>
 
-
-          </Grid2>
-
+      </Grid2>
+</Grid2>
           
         </Grid2>
       </Card>
