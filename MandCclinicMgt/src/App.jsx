@@ -1,5 +1,6 @@
 import { BrowserRouter,Routes,Route } from "react-router-dom";
-import Home from "./pages/Home";
+import MidwifeLogin from "./components/MidwifeLogin";
+import Mother  from "./components/Mother";
 
 function App() {
  
@@ -7,7 +8,9 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-      <Route path='/' element={<Home/>}> </Route>
+        
+         {/* <Route path="/midwife" element={<MidwifeLogin />} /> */}
+         <Route path = "/mother" element = {<Mother /> } />
 
       </Routes>
     
