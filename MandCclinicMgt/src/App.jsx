@@ -1,6 +1,9 @@
 import { BrowserRouter,Routes,Route } from "react-router-dom";
-import MidwifeLogin from "./components/MidwifeLogin";
+
 import Mother  from "./components/Mother";
+import BForm from "./pages/BForm";
+import Selection2 from "./pages/Selection";
+import BabyDashboard from "./pages/BabyCart";
 
 function App() {
  
@@ -11,6 +14,10 @@ function App() {
         
          {/* <Route path="/midwife" element={<MidwifeLogin />} /> */}
          <Route path = "/mother" element = {<Mother /> } />
+         <Route path = "/bform" element = {<BForm/> } />
+         <Route path = "/selection2" element = {<Selection2/> } />
+         <Route path = "/babycart" element = {<BabyDashboard/> } />
+         
 
       </Routes>
     
