@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import BabyDashboard from "./pages/BabyCart";
 import BForm from "./pages/BForm";
 import Selection from "./pages/Selection";
+import VaccinationForm from "./pages/VaccineForm";
+import BirthForm from "./pages/BirthForm";
 
 function App() {
  
@@ -19,6 +21,8 @@ function App() {
          <Route path = "/babycart" element = {<BabyDashboard/> } />
          <Route path = "/bform" element = {<BForm /> } />
          <Route path = "/selection" element = {<Selection /> } />
+         <Route path="/vaccineform" element={<VaccinationForm/>}/>
+         <Route path="/birthform" element={<BirthForm/>}/>
 
       </Routes>
     
