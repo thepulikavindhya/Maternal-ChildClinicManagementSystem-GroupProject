@@ -32,7 +32,7 @@ const Home = () => {
        
           <Typography variant="h9">Maternal and Child Health<br></br>Sri Lanka</Typography>
             <Box ml={'90'} sx={{display: 'flex-end'}}>
-             <img src="src\images\img 3.png" alt="Ministry of Health" style={{ width: '50px' }}  />
+             <img src="src\images\img 3.png" alt="Ministry of Health" style={{ width: '50px', backgroundSize:'cover' }}  />
         </Box>
       </Grid2>
 
