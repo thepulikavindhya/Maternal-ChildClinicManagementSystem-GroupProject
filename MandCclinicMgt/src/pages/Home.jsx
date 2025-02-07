@@ -89,8 +89,7 @@ const Home = () => {
             >
               Every pregnancy and birth is unique. Addressing inequalities that
               affect health outcomes, especially sexual and reproductive health
-              and rights and gender, is fundamental to ensuring all women have
-              access to respectful and high-quality maternity care.
+             
             </Typography>
             <Button
               variant="contained"
@@ -116,7 +115,7 @@ const Home = () => {
             >
               Login as Mother
             </Button>
-            <Typography variant="body2" sx={{ mb: 1, color: "#474658" }}>
+            <Typography variant="body2" sx={{ mb: 1, color: "#ffffff" }}>
               To view the National Maternal and Child Health Policy
             </Typography>
             <Button
@@ -127,7 +126,7 @@ const Home = () => {
                 borderRadius: "20px",
               }}
             >
-              Click Here
+              Click 
             </Button>
           </Container>
           <Box sx={{ position: "absolute", bottom: 0, right: 0, p: 2, zIndex: 1 }}>
