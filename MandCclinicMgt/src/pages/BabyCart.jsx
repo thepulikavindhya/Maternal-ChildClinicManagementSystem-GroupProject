@@ -52,8 +52,13 @@ const BabyDashboard = () => {
                 <div style={{ display: "flex", alignItems: "center" , flexDirection: 'column'}}>
                   <Avatar src={item.image} alt="Baby" sx={{ width: 60, height: 60, marginRight: "15px" }} />
                   <div>
-                    <Typography variant="body2" color="text.secondary">Mother's ID: {item.motherId}</Typography>
-                    <Typography variant="body1">Baby's Name: {item.babyName}</Typography>
+
+                    <Typography variant="body2" color="text.secondary">Mothers ID: {item.motherId}</Typography>
+                    <Typography variant="body1">Babys Name: {item.babyName}</Typography>
+
+                    <Typography variant="body2" color="text.secondary">Mothers ID: {item.motherId}</Typography>
+                    <Typography variant="body1">Babys Name: {item.babyName}</Typography>
+
                     <Typography variant="body2" color="text.secondary">Date of Birth: {item.dob}</Typography>
                   </div>
                 </div>

@@ -1,12 +1,17 @@
 import { BrowserRouter,Routes,Route } from "react-router-dom";
-import MidwifeLogin from "./components/MidwifeLogin";
-import Mother  from "./components/Mother";
+
+// import Mother  from "./components/Mother";
+
+// import BForm from "./pages/BForm";
+
+// import BabyDashboard from "./pages/BabyCart";
+
 import Home from "./pages/Home";
-import BabyDashboard from "./pages/BabyCart";
-import BForm from "./pages/BForm";
-import Selection from "./pages/Selection";
-import VaccinationForm from "./pages/VaccineForm";
-import BirthForm from "./pages/BirthForm";
+
+// import Selection from "./pages/Selection";
+// import VaccinationForm from "./pages/VaccineForm";
+// import BirthForm from "./pages/BirthForm";
+
 
 function App() {
  
@@ -17,12 +22,19 @@ function App() {
         
          {/* <Route path="/midwife" element={<MidwifeLogin />} /> */}
          <Route path = "/" element = {<Home /> } />
-         <Route path = "/mother" element = {<Mother /> } />
+         {/* <Route path = "/mother" element = {<Mother /> } />
+
+         <Route path = "/bform" element = {<BForm/> } />
+        
+         <Route path = "/babycart" element = {<BabyDashboard/> } />
+
          <Route path = "/babycart" element = {<BabyDashboard/> } />
          <Route path = "/bform" element = {<BForm /> } />
          <Route path = "/selection" element = {<Selection /> } />
          <Route path="/vaccineform" element={<VaccinationForm/>}/>
          <Route path="/birthform" element={<BirthForm/>}/>
+        */}
+
 
       </Routes>
     
