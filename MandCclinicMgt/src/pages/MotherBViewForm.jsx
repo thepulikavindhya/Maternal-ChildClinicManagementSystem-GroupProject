@@ -1,12 +1,12 @@
 
-import {Box, TextField,   Avatar, Button, Card, CardContent,  useMediaQuery, Grid2,} from "@mui/material";
+import {Box, TextField,   Avatar, Card, CardContent,  useMediaQuery, Grid2,} from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import { pink } from "@mui/material/colors";
+
 import HOME from "../Images/HOME.png"; 
 
-const BirthForm = () => {
+const MotherBViewForm = () => {
   const isMobile = useMediaQuery("(max-width:600px)");
 
   return (
@@ -103,10 +103,7 @@ const BirthForm = () => {
                 <Grid2 item xs={12} sm={6}>
                   <DatePicker label="Next Clinic Date" renderInput={(params) => <TextField {...params} fullWidth size="small" />} />
                 </Grid2>
-                <Grid2 item xs={12} display="flex" justifyContent="flex-end" spacing={2} sx={{ml:100, height:40 }}>
-                  <Button variant="contained" sx={{ width:200,backgroundColor: pink[300], marginRight: 1, textTransform: "none", }}>EDIT</Button>
-                  <Button variant="contained" sx={{ width:200, backgroundColor: pink[500], textTransform: "none" }}>NEXT</Button>
-                </Grid2>
+                
               </Grid2>
             </Box>
           </CardContent>
@@ -116,4 +113,4 @@ const BirthForm = () => {
   );
 };
 
-export default BirthForm;
+export default MotherBViewForm;
