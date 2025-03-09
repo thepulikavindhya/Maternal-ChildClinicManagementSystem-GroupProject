@@ -1,16 +1,16 @@
-import React from "react";
-import { TextField, Grid, Paper, Typography, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Button, Grid2 } from "@mui/material";
+
+import { TextField, Paper,Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Button, Grid2 } from "@mui/material";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { pink } from "@mui/material/colors";
 import HOME from "../Images/HOME.png"; 
 
-const VaccinationForm = () => {
+const MVaccineForm = () => {
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <Paper sx={{ p: 4, backgroundImage: `url(${HOME})`, backgroundSize:'cover', borderRadius: 3, minHeight:'100vh' }}>
-        <Grid container spacing={2} >
+        <Grid2 container spacing={2} >
           <Grid2 item xs={12} sm={4} sx={{mt:5, ml:2, width:400, height:10}}>
             <TextField label="Age" fullWidth variant="outlined" size="small" />
           </Grid2>
@@ -34,7 +34,7 @@ const VaccinationForm = () => {
             <TextField label="Adverse Effects Following Immunization" fullWidth variant="outlined" size="small" />
           </Grid2>
           
-          <Grid2 item xs={12} sx={{ display: "flex", justifyContent: "flex-end", gap: 2, mt: 6, ml:160 }}>
+          <Grid2 item xs={12} sx={{ display: "flex", justifyContent: "flex-end", gap: 2, mt: 6, ml:100 }}>
             <Button variant="contained" sx={{backgroundColor:pink[500],textTransform: "none", width:200  }}>Save</Button>
             <Button variant="outlined" sx={{backgroundColor:pink[300], textTransform: "none" , color: 'white', border: 'none', width:200}}>Cancel</Button>
           </Grid2>
@@ -74,10 +74,10 @@ const VaccinationForm = () => {
           </Grid2>
 
           
-        </Grid>
+        </Grid2>
       </Paper>
     </LocalizationProvider>
   );
 }
 
-export default VaccinationForm;
+export default MVaccineForm;
