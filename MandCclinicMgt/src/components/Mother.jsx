@@ -1,5 +1,5 @@
-import React from "react";
-import { Card, CardContent, Typography, TextField, Button, Grid2, colors } from "@mui/material";
+
+import { Card, CardContent, Typography, TextField, Button, Grid2, } from "@mui/material";
 import img7 from '../images/img7.jpeg';
 import img8 from '../images/img8.jpeg';
 

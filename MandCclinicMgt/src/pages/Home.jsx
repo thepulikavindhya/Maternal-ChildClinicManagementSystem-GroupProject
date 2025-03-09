@@ -1,8 +1,13 @@
 import { Box, Button, Card, Container, Grid2, Typography } from "@mui/material";
 import PersonIcon from "@mui/icons-material/Person";
+import { useNavigate } from "react-router-dom";
 
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
+
   return (
     <Box
       sx={{
@@ -15,44 +20,48 @@ const Home = () => {
       }}
     >
       <Card sx={{ maxWidth: { xs: 350, sm: 600, md: 800, lg: 1000 }, width: "90%", borderRadius: "16px", overflow: "hidden" }}>
-        <Grid2 container sx={{ backgroundColor: "#fff", padding: { xs: 2, sm: 3, md: 4 } }}>
-          <Grid2
-            item
-            xs={12}
-            sm={6}
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: { xs: "center", sm: "space-between" },
-              flexDirection: { xs: "column", sm: "row" },
-              gap: { xs: "5px", sm: "10px", md: "20px" }
-            }}
-          >
-            <Box
-              display="flex"
-              flexDirection={"column"}
-              alignItems="center"
-              sx={{
-                flexGrow: 2,
-                height:"10px",
-                p: { xs: 1, sm: 2 },
-                fontWeight: "bold",
-                justifyContent: "space-between",
-                flexDirection: { xs: "column", sm: "row" },
-              }}
-            >
-              <img src="src/images/img 4.png" alt="Maternal and Child Health" style={{ width: "50px" }} />
-              <Typography variant="h9" ml={2} textAlign={{ xs: "center", sm: "left" }}>
-                Maternal and Child Health<br />
-                Sri Lanka
-              </Typography>
-            </Box>
-
-            <Box mt={{ xs: 2, sm: 0 }} >
-              <img src="src/images/img 3.png" alt="Ministry of Health" style={{ width: "70px" }} />
-            </Box>
-          </Grid2>
+      <Grid2 sx={{
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      padding: '10px 20px',
+      backgroundColor: '#f9f9f9',
+      borderBottom: '1px solid #ddd',
+      width: '100%',
+      boxSizing: 'border-box', 
+    }}>
+ 
+      <Grid2 sx={{ display: 'flex', alignItems: 'center' }}>
+        <img
+          src="src/images/img 4.png"  
+          alt="Maternal and Child Health Logo"
+          style={{
+            height: '50px',
+            marginRight: '10px',
+            maxWidth: '60px', 
+          }}
+        />
+        <Grid2 style={{ lineHeight: '1.2' }}>
+          <Typography variant="h8" sx={{ margin: 0, fontSize: '1rem' }}>Maternal and Child Health</Typography>
+          <Typography variant="h5" sx={{ margin: 0, fontSize: '0.9rem', color: '#555' }}>Sri Lanka</Typography>
         </Grid2>
+      </Grid2>
+
+   
+      <Grid2 sx ={{ display: 'flex', alignItems: 'center' }}>
+        <img
+          src="src/images/img 3.png" 
+          alt="Ministry of Health Logo"
+          style={{
+            height: '45px',
+            width: '130px',
+            marginLeft: '5px',
+            maxWidth: '150px', 
+          }}
+        />
+
+      </Grid2>
+    </Grid2>
 
         <Box
           sx={{
@@ -114,34 +123,35 @@ const Home = () => {
                   all women have access to respectful and high-quality maternity care.
                 </Typography>
              
-<Button
-  variant="contained"
-  startIcon={<PersonIcon />}
-  sx={{
-    mb: 2,
-    width: "90%",
-    backgroundColor: "white",
-    color: "black",
-    borderRadius: "25px",
-    fontSize: { xs: "0.8rem", sm: "1rem" },
-  }}
->
-  Login as Midwife
-</Button>
-<Button
-  variant="contained"
-  startIcon={<PersonIcon />}
-  sx={{
-    mb: 4,
-    width: "90%",
-    backgroundColor: "white",
-    color: "black",
-    borderRadius: "25px",
-    fontSize: { xs: "0.8rem", sm: "1rem" },
-  }}
->
-  Login as Mother
-</Button>
+                  <Button
+                    variant="contained"
+                    startIcon={<PersonIcon />}
+                    sx={{
+                      mb: 2,
+                      width: "90%",
+                      backgroundColor: "white",
+                      color: "black",
+                      borderRadius: "25px",
+                      fontSize: { xs: "0.8rem", sm: "1rem" },
+                    }}
+                  >
+                    Login as Mother
+                  </Button>
+                      <Button
+                      variant="contained"
+                      startIcon={<PersonIcon />}
+                      sx={{
+                        mb: 4,
+                        width: "90%",
+                        backgroundColor: "white",
+                        color: "black",
+                        borderRadius: "25px",
+                        fontSize: { xs: "0.8rem", sm: "1rem" },
+                      }}
+                      onClick={() => navigate("/midwife")} // Navigate to the login mother page
+                    >
+                      Login as Midwife
+                    </Button>
 
                 <Typography variant="body2" sx={{ mb: 1, color: "#474658", fontSize: { xs: "0.8rem", sm: "1rem" } }}>
                   To view the National Maternal and Child Health Policy
