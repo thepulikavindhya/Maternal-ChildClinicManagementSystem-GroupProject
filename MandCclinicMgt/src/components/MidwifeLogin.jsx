@@ -1,10 +1,14 @@
-import React from "react";
-import { Card, CardContent, Typography, TextField, Button, Grid2, colors } from "@mui/material";
+
+import { Card, CardContent, Typography, TextField, Button, Grid2,  } from "@mui/material";
 import img5 from '../images/img5.jpeg';
 import img6 from '../images/img6.jpeg';
-import { matchRoutes } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 
 const MidwifeLogin = () =>{
+
+  const navigate = useNavigate();
+
   const containerStyle = {
     display: "flex",
     justifyContent: "center",
@@ -116,7 +120,7 @@ const MidwifeLogin = () =>{
                         type="password"
                         style={inputStyle}
                     />
-                    <Button fullWidth style={buttonStyle}>
+                    <Button onClick={() => navigate("/bselection")} fullWidth style={buttonStyle}>
                         Login
                     </Button>
                 </form>
